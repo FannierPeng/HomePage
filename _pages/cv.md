@@ -1,48 +1,87 @@
 ---
 layout: page
-title: 教育与荣誉
+title: 教育与经历
 permalink: /cv/
-description: 教育背景、工作经历、荣誉奖励与知识产权。
+description: 教育背景、工作经历与研究方向。
 nav: true
 nav_order: 4
 ---
 
-## 教育背景
+<style>
+main { font-size: 16px; line-height: 1.8; }
+main h1 { font-size: clamp(1.8rem, 3vw, 2.25rem); line-height: 1.3; font-weight: 760; letter-spacing: -0.02em; }
+main h2 { margin-top: 2.35rem; margin-bottom: 1rem; padding-bottom: 0.55rem; border-bottom: 1px solid var(--global-divider-color, #e5e7eb); font-size: clamp(1.3rem, 2.1vw, 1.55rem); font-weight: 740; }
+.fang-cv { --cv-accent: var(--global-theme-color, #7952b3); --cv-border: var(--global-divider-color, #e5e7eb); font-size: 1rem; line-height: 1.8; }
+.fang-cv .cv-timeline { position: relative; margin: 0.45rem 0 1rem 0.45rem; padding-left: 1.55rem; border-left: 2px solid var(--cv-border); }
+.fang-cv .cv-item { position: relative; margin: 0 0 1.15rem; animation: cv-fade-up 600ms cubic-bezier(.2,.7,.2,1) both; animation-delay: var(--cv-delay, 0ms); }
+.fang-cv .cv-item:last-child { margin-bottom: 0.2rem; }
+.fang-cv .cv-item::before { content: ""; position: absolute; left: calc(-1.55rem - 6px); top: 0.95rem; width: 10px; height: 10px; border: 3px solid var(--global-bg-color, #fff); border-radius: 50%; background: var(--cv-accent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--cv-accent) 28%, transparent); transition: transform 200ms ease; }
+.fang-cv .cv-item:hover::before { transform: scale(1.18); }
+.fang-cv .cv-date { display: inline-block; margin: 0 0 0.52rem; padding: 0.2rem 0.65rem; border: 1px solid color-mix(in srgb, var(--cv-accent) 24%, var(--cv-border)); border-radius: 999px; background: color-mix(in srgb, var(--cv-accent) 7%, transparent); color: var(--cv-accent); font-size: 0.82rem; font-weight: 720; }
+.fang-cv .cv-card { padding: 1rem 1.1rem; border: 1px solid var(--cv-border); border-radius: 13px; background: color-mix(in srgb, var(--global-bg-color, #fff) 97%, var(--cv-accent) 3%); transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease; }
+.fang-cv .cv-card:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--cv-accent) 42%, var(--cv-border)); box-shadow: 0 8px 20px color-mix(in srgb, var(--cv-accent) 9%, transparent); }
+.fang-cv .cv-title { display: flex; align-items: center; flex-wrap: wrap; gap: 0.4rem 0.65rem; font-size: 1.06rem; line-height: 1.55; }
+.fang-cv .cv-tag { display: inline-block; padding: 0.1rem 0.5rem; border-radius: 6px; background: color-mix(in srgb, var(--cv-accent) 10%, transparent); color: var(--cv-accent); font-size: 0.78rem; font-weight: 700; }
+.fang-cv .cv-meta { margin: 0.3rem 0 0; color: var(--global-text-color-light, #6b7280); font-size: 0.92rem; }
+.fang-cv .cv-links { display: flex; flex-wrap: wrap; gap: 0.65rem; margin-top: 1rem; }
+.fang-cv .cv-link { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.48rem 0.8rem; border: 1px solid color-mix(in srgb, var(--cv-accent) 32%, var(--cv-border)); border-radius: 8px; color: var(--cv-accent); font-size: 0.9rem; font-weight: 650; text-decoration: none; }
+.fang-cv .cv-link:hover { background: color-mix(in srgb, var(--cv-accent) 8%, transparent); text-decoration: none; }
+@keyframes cv-fade-up { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 640px) { main { font-size: 15.5px; } .fang-cv .cv-card { padding: 0.9rem; } }
+@media (prefers-reduced-motion: reduce) { .fang-cv .cv-item { animation: none; } .fang-cv .cv-card, .fang-cv .cv-item::before { transition: none; } }
+</style>
 
-- **2021.09—2026.01｜中国科学院大学，博士**，模式识别与智能系统（中国科学院自动化研究所）；导师：徐常胜研究员。
-- **2017.09—2020.01｜中国农业大学，硕士**，计算机科学与技术（推免）；导师：李振波。
-- **2013.09—2017.06｜中国农业大学，本科及双学位**，能源与动力工程、计算机科学与技术；本科专业排名 4/29。
+<div class="fang-cv">
+<p>以下为教育背景与工作经历。首页展示简要时间轴，本页提供更完整的经历信息。</p>
 
-## 工作经历
+<h2>教育背景</h2>
+<div class="cv-timeline">
+  <article class="cv-item" style="--cv-delay: 0ms">
+    <div class="cv-date">2022.09 — 2026.06</div>
+    <div class="cv-card">
+      <div class="cv-title"><strong>中山大学 · 计算机学院</strong><span class="cv-tag">博士</span></div>
+      <p class="cv-meta">导师：王昌栋教授</p>
+    </div>
+  </article>
+  <article class="cv-item" style="--cv-delay: 100ms">
+    <div class="cv-date">2018.09 — 2021.06</div>
+    <div class="cv-card">
+      <div class="cv-title"><strong>中山大学 · 计算机学院</strong><span class="cv-tag">硕士</span></div>
+      <p class="cv-meta">导师：王昌栋教授</p>
+    </div>
+  </article>
+  <article class="cv-item" style="--cv-delay: 200ms">
+    <div class="cv-date">2014.09 — 2018.06</div>
+    <div class="cv-card">
+      <div class="cv-title"><strong>华南农业大学 · 数学与信息学院软件学院</strong><span class="cv-tag">学士</span></div>
+      <p class="cv-meta">导师：黄栋教授</p>
+    </div>
+  </article>
+</div>
 
-**2020.04—2021.08｜鹏城国家实验室，算法工程师（开源软硬件平台）**
+<h2>工作经历</h2>
+<div class="cv-timeline">
+  <article class="cv-item" style="--cv-delay: 0ms">
+    <div class="cv-date">2026.07 — 至今</div>
+    <div class="cv-card">
+      <div class="cv-title"><strong>华南农业大学</strong><span class="cv-tag">副教授</span></div>
+      <p class="cv-meta">数学与信息学院软件学院</p>
+      <p>从事计算机与人工智能相关教学和科研工作。</p>
+    </div>
+  </article>
+</div>
 
-参与“鹏城·云脑 I”平台的云服务容器管理、AutoML 集成、大规模视觉语言预训练模型部署优化，以及盘古 α 大模型的 GPU 并行加速与训练工作。具体研究项目见「科研经历」页面。
+<h2>研究方向</h2>
+<ul>
+  <li><strong>多模态大模型视觉理解与判别增强：</strong>探索细粒度视觉识别、视觉信息选择以及多模态大语言模型内在视觉能力激发。</li>
+  <li><strong>视觉语言预训练模型的小样本适配与迁移：</strong>研究通用预训练知识与任务特定视觉信息的高效融合。</li>
+  <li><strong>实例级时序语义建模与小样本视频理解：</strong>面向少样本动作识别，学习细粒度实例语义和动态时序信息。</li>
+</ul>
 
-## 荣誉奖励
-
-- 2024｜中国科学院大学三好学生
-- 2023｜鹏城实验室优秀博士生
-- 2018｜中国农业大学硕士学业一等奖学金
-- 2017｜中国农业大学本科生双学位优秀毕业论文
-- 2016｜美国大学生数学建模竞赛 H 奖
-- 2016｜全国大学生物理竞赛二等奖
-- 2016｜国家励志奖学金
-- 2014、2015｜曦之奖学金
-- 2014、2015｜中国农业大学三好学生
-- 2014｜中国农业大学暑期社会实践优秀个人、本科生优秀学生干部及本科学业一等奖学金
-
-## 专利与软件著作权
-
-- **授权发明专利**：小样本动作识别方法、电子设备及介质，专利号 **ZL202510067424.8**（简历所列学生第一）。
-- **软件著作权**：基于改进 Retinex 算法的图像增强系统；基于神经网络的养殖水质溶解氧预测系统。
-
-## 学术指标
-
-根据所提供简历中的记录，Google Scholar 总引用 **1,073**，H-index **11**。这些数值为静态记录，建议上线前核对最新数据，并在 `_data/socials.yml` 中添加 Google Scholar 主页链接或用户 ID。
-
-## 联系方式
-
-- 邮箱：[pengfang_cau@qq.com](mailto:pengfang_cau@qq.com)
-
-> 为避免不必要的个人信息公开，主页未自动展示简历中的手机号。确认需要公开后，可自行在此处添加。
+<h2>代表性论文</h2>
+<p>代表性论文及其 DOI、代码链接请见学术成果页面。</p>
+<div class="cv-links">
+  <a class="cv-link" href="{{ '/publications/' | relative_url }}"><i class="fa-solid fa-book-open" aria-hidden="true"></i> 查看学术成果</a>
+  <a class="cv-link" href="mailto:pengfang_cau@qq.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> 联系我</a>
+</div>
+</div>
