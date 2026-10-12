@@ -1,12 +1,48 @@
 ---
-layout: cv
+layout: page
+title: 教育与荣誉
 permalink: /cv/
-title: CV
+description: 教育背景、工作经历、荣誉奖励与知识产权。
 nav: true
-nav_order: 5
-cv_pdf: /assets/pdf/example_pdf.pdf # you can also use external links here
-cv_format: rendercv # options: rendercv, jsonresume
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
+nav_order: 4
 ---
+
+## 教育背景
+
+- **2021.09—2026.01｜中国科学院大学，博士**，模式识别与智能系统（中国科学院自动化研究所）；导师：徐常胜研究员。
+- **2017.09—2020.01｜中国农业大学，硕士**，计算机科学与技术（推免）；导师：李振波。
+- **2013.09—2017.06｜中国农业大学，本科及双学位**，能源与动力工程、计算机科学与技术；本科专业排名 4/29。
+
+## 工作经历
+
+**2020.04—2021.08｜鹏城国家实验室，算法工程师（开源软硬件平台）**
+
+参与“鹏城·云脑 I”平台的云服务容器管理、AutoML 集成、大规模视觉语言预训练模型部署优化，以及盘古 α 大模型的 GPU 并行加速与训练工作。具体研究项目见「科研经历」页面。
+
+## 荣誉奖励
+
+- 2024｜中国科学院大学三好学生
+- 2023｜鹏城实验室优秀博士生
+- 2018｜中国农业大学硕士学业一等奖学金
+- 2017｜中国农业大学本科生双学位优秀毕业论文
+- 2016｜美国大学生数学建模竞赛 H 奖
+- 2016｜全国大学生物理竞赛二等奖
+- 2016｜国家励志奖学金
+- 2014、2015｜曦之奖学金
+- 2014、2015｜中国农业大学三好学生
+- 2014｜中国农业大学暑期社会实践优秀个人、本科生优秀学生干部及本科学业一等奖学金
+
+## 专利与软件著作权
+
+- **授权发明专利**：小样本动作识别方法、电子设备及介质，专利号 **ZL202510067424.8**（简历所列学生第一）。
+- **软件著作权**：基于改进 Retinex 算法的图像增强系统；基于神经网络的养殖水质溶解氧预测系统。
+
+## 学术指标
+
+根据所提供简历中的记录，Google Scholar 总引用 **1,073**，H-index **11**。这些数值为静态记录，建议上线前核对最新数据，并在 `_data/socials.yml` 中添加 Google Scholar 主页链接或用户 ID。
+
+## 联系方式
+
+- 邮箱：[pengfang_cau@qq.com](mailto:pengfang_cau@qq.com)
+
+> 为避免不必要的个人信息公开，主页未自动展示简历中的手机号。确认需要公开后，可自行在此处添加。

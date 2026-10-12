@@ -1,13 +1,8 @@
 ---
 layout: page
-title: submenus
-nav: true
-nav_order: 8
-dropdown: true
-children:
-  - title: bookshelf
-    permalink: /books/
-  - title: divider
-  - title: blog
-    permalink: /blog/
+title: 更多
+permalink: /dropdown/
+nav: false
 ---
+
+该栏目暂未开放。
