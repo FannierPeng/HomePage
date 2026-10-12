@@ -6,7 +6,7 @@
   pages        = {3469--3480},
   year         = {2024},
   doi          = {10.1109/TMM.2023.3311646},
-  html         = {https://doi.org/10.1109/TMM.2023.3311646},
+  abstract     = {针对视觉语言预训练模型在少样本图像分类中如何兼顾通用语义知识与任务特定视觉知识的问题，提出语义引导的视觉适配方法 SgVA-CLIP。该方法冻结 CLIP 主干，通过轻量视觉适配模块和隐式知识蒸馏，将跨模态类别原型中的细粒度相对语义迁移到视觉特征空间，并结合视觉空间与跨模态对比目标优化适配参数。该工作旨在提升少样本分类效果，同时尽可能保留预训练模型的泛化能力。},
   selected     = {true}
 }
 
@@ -18,7 +18,7 @@
   pages        = {853--864},
   year         = {2026},
   doi          = {10.1109/TMM.2025.3632652},
-  html         = {https://doi.org/10.1109/TMM.2025.3632652},
+  abstract     = {针对小样本动作识别中类级文本嵌入语义多样性不足、难以充分表达实例差异与时序动态的问题，提出渐进式实例级代理语义学习方法 ProLIPS。方法通过代理语义扩散模块生成具有丰富语义内容与时间动态的实例级代理特征，并结合多步 CLIP 引导和时间条件反向扩散过程，提升少样本视频理解的泛化能力。论文在五个具有挑战性的小样本动作识别基准上进行了实验验证。},
   selected     = {true}
 }
 
@@ -31,8 +31,8 @@
   pages        = {5865--5876},
   year         = {2026},
   doi          = {10.1109/TCSVT.2026.3652189},
-  html         = {https://doi.org/10.1109/TCSVT.2026.3652189},
-  code         = {https://github.com/FannierPeng/GROVE},
+  code         = {https://github.com/FannierPeng/LLaVA-GRL},
+  abstract     = {针对多模态大语言模型在视觉判别任务中可能更依赖语言先验、未能充分利用细粒度视觉信息的问题，提出组相对视觉判别增强框架 GROVE。方法设计轻量视觉 Patch 选择插件，动态选择具有判别价值的视觉 token，并利用模型内部语言反馈构建组相对强化学习的奖励与惩罚信号，形成视觉关注与语言反馈之间的自反馈优化过程。该方法不依赖额外外部特征或知识；论文在六个视觉识别基准和两个视觉问答基准上验证了方法效果。},
   selected     = {true}
 }
 
@@ -42,7 +42,8 @@
   journal      = {Expert Systems with Applications},
   volume       = {182},
   pages        = {115306},
-  year         = {2021}
+  year         = {2021},
+  abstract     = {针对水下海参检测中背景复杂、目标尺度变化及特征表达不足等问题，提出快捷特征金字塔网络 S-FPN，通过多尺度特征融合增强检测模型对目标信息的表征。该工作面向水下目标检测这一实际应用场景，相关成果发表于 Expert Systems with Applications。原个人简历记录该项实验的平均 mAP 约为 94%。}
 }
 
 @article{peng2017eemd,
@@ -52,7 +53,8 @@
   volume       = {26},
   number       = {4},
   pages        = {283--292},
-  year         = {2017}
+  year         = {2017},
+  abstract     = {面向水产养殖环境中的溶解氧预测，结合集合经验模态分解（EEMD）的多尺度信号分析能力与极限学习机（ELM）的非线性建模能力，构建溶解氧多尺度组合预测模型。该研究关注复杂时序信号的分解、建模与预测，为养殖水质监测提供数据驱动方法。}
 }
 
 @article{li2018water,
@@ -62,7 +64,8 @@
   volume       = {51},
   number       = {17},
   pages        = {831--836},
-  year         = {2018}
+  year         = {2018},
+  abstract     = {该工作将稀疏自编码器与长短期记忆网络（LSTM）结合，用于水质预测建模，探索稀疏特征表示与时序依赖建模的组合方法。该研究属于早期面向水产养殖与环境监测数据的预测建模工作。}
 }
 
 @inproceedings{xiao2024oneref,
@@ -91,9 +94,10 @@
 
 @article{zeng2021pangu,
   title        = {PanGu-$\alpha$: Large-Scale Autoregressive Pretrained Chinese Language Models with Auto-Parallel Computation},
-  author       = {Zeng, Wei and Ren, Xiaozhe and Su, Teng and Wang, Hui and Liao, Yi and Wang, Zhiwei and Jiang, Xin and Yang, Zhenzhang and Wang, Kaisheng and Zhang, Xiaoda and Li, Chen and Gong, Ziyan and Yao, Yifan and Huang, Xinjing and Wang, Jun and Yu, Jianfeng and Guo, Qi and Yu, Yue and Zhang, Yan and Wang, Jin and Tao, Hengtao and Yan, Dasen and Yi, Zexuan and Peng, Fang and Jiang, Fangqing and Zhang, Han and Deng, Lingfeng and Zhang, Yehong and Lin, Zhe and Zhang, Chao and Zhang, Shaojie and Guo, Mingyue and Gu, Shanzhi and Fan, Gaojun and Wang, Yaowei and Jin, Xuefeng and Liu, Qun and Tian, Yonghong},
+  author       = {Zeng, Wei and Ren, Xiaozhe and Su, Teng and Wang, Hui and Liao, Yi and Wang, Zhiwei and Jiang, Xin and Yang, Zhenzhang and Wang, Kaisheng and Zhang, Xiaoda and Li, Chen and Gong, Ziyan and Yao, Yifan and Huang, Xinjing and Wang, Jun and Yu, Jianfeng and Guo, Qi and Yu, Yue and Zhang, Yan and Wang, Jin and Tao, Hengtao and Yan, Dasen and Yi, Zexuan and Peng, Fang and Jiang, Fangqing and Zhang, Han and Deng, Lingfeng and Lin, Zhe and Zhang, Chao and Zhang, Shaojie and Guo, Mingyue and Gu, Shanzhi and Fan, Gaojun and Wang, Yaowei and Jin, Xuefeng and Liu, Qun and Tian, Yonghong},
   journal      = {arXiv preprint arXiv:2104.12369},
   year         = {2021},
   eprint       = {2104.12369},
-  archivePrefix = {arXiv}
+  archivePrefix = {arXiv},
+  abstract     = {该论文介绍大规模中文自回归预训练语言模型 PanGu-$\alpha$，并讨论面向大规模模型训练的自动并行计算方案。相关技术工作与在鹏城国家实验室参与的盘古 Alpha 大模型研发经历相关。}
 }
