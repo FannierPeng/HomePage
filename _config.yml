@@ -359,7 +359,7 @@ scholar:
   first_name: [Peng]
 
   style: apa
-  locale: Guangzhou, China
+  locale: en
 
   source: /_bibliography/
   bibliography: papers.bib
