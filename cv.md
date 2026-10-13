@@ -3,8 +3,7 @@ layout: page
 title: 教育与经历
 permalink: /cv/
 description: 教育背景、工作经历与研究方向。
-nav: true
-nav_order: 4
+nav: false
 ---
 
 <style>
