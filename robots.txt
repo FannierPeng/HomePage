@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://fannierpeng.github.io//HomePage_old/sitemap.xml
+Sitemap: https://fannierpeng.github.io//HomePage/sitemap.xml
