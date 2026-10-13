@@ -1,7 +1,7 @@
 ---
 layout: about_old
 title: 首页
-permalink: /
+permalink: /about_old/
 nav: false
 subtitle: 副教授 · 多模态大模型与视觉语言学习
 profile:
