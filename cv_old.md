@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 教育与经历
-permalink: /cv/
+permalink: /cv_old/
 description: 教育背景、工作经历与研究方向。
 nav: false
 ---
