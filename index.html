@@ -1,156 +1,597 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"> <html> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <style>
-/* 首页专属样式：不修改 al-folio 核心布局，保留其主题与深色模式。 */
-body {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
+<!DOCTYPE html> <html lang="cn"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> 彭芳 | 华南农业大学教师个人主页 </title> <meta name="author" content="Fang Peng"> <meta name="description" content="彭芳的个人学术主页，研究方向包括多模态大模型、视觉语言预训练、小样本迁移学习与视觉理解。"> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/HomePage/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/HomePage/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/HomePage/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://fannierpeng.github.io//HomePage/"> <script src="/HomePage/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/HomePage/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item active"> <a class="nav-link" href="/HomePage/">首页 <span class="sr-only">(current)</span> </a> </li> <li class="nav-item active"> <a class="nav-link" href="/HomePage/">首页 <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/HomePage/publications/">学术成果 </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title"> 彭芳 | 华南农业大学教师个人主页 </h1> <p class="desc">首聘副教授 · 多模态大模型与视觉语言学习</p> </header> <article> <div class="profile float-left"> <figure> <picture> <source class="responsive-img-srcset" srcset="/HomePage/assets/img/prof_pic-480.webp 480w,/HomePage/assets/img/prof_pic-800.webp 800w,/HomePage/assets/img/prof_pic-1400.webp 1400w," type="image/webp" sizes="(min-width: 930px) 270.0px, (min-width: 576px) 30vw, 95vw"> <img src="/HomePage/assets/img/prof_pic.jpg?v=cbfa04294e02a6048887b331589f8516" class="img-fluid z-depth-1 rounded" width="100%" height="auto" alt="prof_pic.jpg" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </source></picture> </figure> <div class="more-info"> <p><a href="mailto:pengfang_cau@qq.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> pengfang_cau@qq.com</a></p> <p><i class="fa-solid fa-flask" aria-hidden="true"></i> 多模态大模型 · 视觉语言学习 · 小样本迁移</p> </div> </div> <div class="clearfix"> <style>
+/* 页面局部样式：兼容 al-folio v1.x 的 Tailwind 样式模式，不依赖 Bootstrap。 */
 main { font-size: 16px; line-height: 1.78; }
-main h1 {
-  font-size: clamp(1.9rem, 3.4vw, 2.45rem);
-  line-height: 1.28;
-  font-weight: 760;
-  letter-spacing: -0.025em;
-}
-main h2 {
-  position: relative;
-  margin: 2.7rem 0 1.15rem;
-  padding-bottom: 0.62rem;
-  border-bottom: 1px solid var(--global-divider-color, #e5e7eb);
-  font-size: clamp(1.42rem, 2.2vw, 1.7rem);
-  line-height: 1.4;
-  font-weight: 760;
-  letter-spacing: -0.018em;
-}
-main h2::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 3.2rem;
-  height: 3px;
-  border-radius: 8px;
-  background: var(--global-theme-color, #7952b3);
-}
-main h3 { margin: 0 0 0.55rem; font-size: 1.12rem; line-height: 1.5; font-weight: 730; }
-main p { font-size: 1rem; line-height: 1.85; }
-.profile .more-info, .profile .more-info p { font-size: 0.9rem; line-height: 1.7; }
-.profile .more-info p { margin: 0.45rem 0; }
+main h1 { font-size: clamp(1.9rem, 3.1vw, 2.35rem); line-height: 1.3; font-weight: 760; letter-spacing: -.025em; }
+.profile .more-info, .profile .more-info p { font-size: .9rem; line-height: 1.7; }
+.profile .more-info p { margin: .42rem 0; }
 .fang-homepage {
   --fp-accent: var(--global-theme-color, #7952b3);
   --fp-border: var(--global-divider-color, #e5e7eb);
   --fp-text: var(--global-text-color, #252832);
-  color: var(--fp-text);
-  font-size: 1rem;
-  line-height: 1.82;
+  color: var(--fp-text); font-size: 1rem; line-height: 1.82;
 }
-.fang-homepage p { font-size: 1rem; line-height: 1.85; }
-.fang-homepage .fp-intro { font-size: 1.04rem; line-height: 1.95; margin: 0.1rem 0 0.85rem; }
-.fang-homepage .fp-muted { color: var(--global-text-color-light, #6b7280); font-size: 0.91rem; }
-.fang-homepage .fp-timeline {
-  position: relative;
-  margin: 0.55rem 0 0.25rem 0.45rem;
-  padding-left: 1.55rem;
-  border-left: 2px solid var(--fp-border);
+.fang-homepage h2 {
+  position: relative; margin: 2.45rem 0 1rem; padding-bottom: .58rem;
+  border-bottom: 1px solid var(--fp-border); font-size: clamp(1.35rem, 2.1vw, 1.62rem);
+  line-height: 1.42; font-weight: 760; letter-spacing: -.015em;
 }
-.fang-homepage .fp-timeline-item {
-  position: relative;
-  padding: 0 0 1.2rem;
-  animation: fp-rise-in 620ms cubic-bezier(.2,.7,.2,1) both;
-  animation-delay: var(--fp-delay, 0ms);
-}
-.fang-homepage .fp-timeline-item:last-child { padding-bottom: 0.15rem; }
-.fang-homepage .fp-timeline-item::before {
-  content: "";
-  position: absolute;
-  left: calc(-1.55rem - 6px);
-  top: 0.94rem;
-  width: 10px;
-  height: 10px;
-  border: 3px solid var(--global-bg-color, #fff);
-  border-radius: 50%;
-  background: var(--fp-accent);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--fp-accent) 28%, transparent);
-  transition: transform 220ms ease, box-shadow 220ms ease;
-}
-.fang-homepage .fp-timeline-item:hover::before {
-  transform: scale(1.18);
-  box-shadow: 0 0 0 5px color-mix(in srgb, var(--fp-accent) 13%, transparent);
-}
-.fang-homepage .fp-date {
-  display: inline-flex;
-  align-items: center;
-  margin: 0 0 0.55rem;
-  padding: 0.22rem 0.68rem;
-  border: 1px solid color-mix(in srgb, var(--fp-accent) 24%, var(--fp-border));
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--fp-accent) 7%, transparent);
-  color: var(--fp-accent);
-  font-size: 0.82rem;
-  font-weight: 720;
-  letter-spacing: 0.01em;
-}
-.fang-homepage .fp-card {
-  border: 1px solid var(--fp-border);
-  border-radius: 14px;
-  background: color-mix(in srgb, var(--global-bg-color, #fff) 97%, var(--fp-accent) 3%);
-  padding: 1rem 1.1rem;
-  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
-}
-.fang-homepage .fp-card:hover {
-  transform: translateY(-3px);
-  border-color: color-mix(in srgb, var(--fp-accent) 45%, var(--fp-border));
-  box-shadow: 0 8px 22px color-mix(in srgb, var(--fp-accent) 10%, transparent);
-}
-.fang-homepage .fp-card-title {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.4rem 0.65rem;
-  margin: 0 0 0.2rem;
-  font-size: 1.08rem;
-  line-height: 1.55;
-}
-.fang-homepage .fp-tag {
-  display: inline-block;
-  padding: 0.1rem 0.52rem;
-  border-radius: 6px;
-  background: color-mix(in srgb, var(--fp-accent) 10%, transparent);
-  color: var(--fp-accent);
-  font-size: 0.77rem;
-  font-weight: 730;
-}
-.fang-homepage .fp-meta, .fang-homepage .fp-mentor {
-  margin: 0.28rem 0 0;
-  font-size: 0.92rem;
-  line-height: 1.7;
-}
+.fang-homepage h2::after { content: ""; position: absolute; left: 0; bottom: -1px; width: 2.8rem; height: 3px; border-radius: 8px; background: var(--fp-accent); }
+.fang-homepage h3 { margin: 0 0 .45rem; font-size: 1.04rem; line-height: 1.55; font-weight: 740; }
+.fang-homepage p { margin: .45rem 0; font-size: 1rem; line-height: 1.82; }
+.fang-homepage .fp-intro { margin: .2rem 0 .85rem; font-size: 1.02rem; line-height: 1.9; }
+/* The profile image floats beside the intro in al-folio's about layout. Clear it before Education. */
+.fang-homepage h2.fp-clear { clear: both; margin-top: 2.35rem; padding-top: .2rem; }
+.fang-homepage .fp-muted { color: var(--global-text-color-light, #6b7280); font-size: .9rem; }
+.fang-homepage .fp-timeline { position: relative; margin: .5rem 0 .25rem .42rem; padding-left: 1.45rem; border-left: 2px solid var(--fp-border); }
+.fang-homepage .fp-item { position: relative; margin: 0 0 1.1rem; animation: fp-rise-in 580ms cubic-bezier(.2,.7,.2,1) both; animation-delay: var(--fp-delay, 0ms); }
+.fang-homepage .fp-item:last-child { margin-bottom: .2rem; }
+.fang-homepage .fp-item::before { content: ""; position: absolute; left: calc(-1.45rem - 6px); top: .32rem; width: 10px; height: 10px; border: 3px solid var(--global-bg-color, #fff); border-radius: 50%; background: var(--fp-accent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--fp-accent) 22%, transparent); transition: transform 180ms ease, box-shadow 180ms ease; }
+.fang-homepage .fp-item:hover::before { transform: scale(1.12); box-shadow: 0 0 0 5px color-mix(in srgb, var(--fp-accent) 10%, transparent); }
+.fang-homepage .fp-date-row { display: block; margin: 0 0 .55rem; }
+.fang-homepage .fp-date { display: inline-block; padding: .2rem .68rem; border: 1px solid color-mix(in srgb, var(--fp-accent) 24%, var(--fp-border)); border-radius: 999px; background: color-mix(in srgb, var(--fp-accent) 6%, transparent); color: var(--fp-accent); font-size: .82rem; line-height: 1.5; font-weight: 730; white-space: nowrap; }
+.fang-homepage .fp-card { padding: .9rem 1.05rem; border: 1px solid var(--fp-border); border-radius: 12px; background: color-mix(in srgb, var(--global-bg-color, #fff) 97%, var(--fp-accent) 3%); transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease; }
+.fang-homepage .fp-card:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--fp-accent) 35%, var(--fp-border)); box-shadow: 0 6px 16px color-mix(in srgb, var(--fp-accent) 8%, transparent); }
+.fang-homepage .fp-card-title { display: flex; flex-wrap: wrap; align-items: flex-start; gap: .35rem .55rem; margin: 0 0 .2rem; font-size: 1.02rem; line-height: 1.62; }
+.fang-homepage .fp-tag { display: inline-block; padding: .1rem .48rem; border-radius: 6px; background: color-mix(in srgb, var(--fp-accent) 9%, transparent); color: var(--fp-accent); font-size: .77rem; line-height: 1.5; font-weight: 720; white-space: nowrap; }
+.fang-homepage .fp-meta, .fang-homepage .fp-mentor { margin: .25rem 0 0; font-size: .92rem; line-height: 1.7; }
 .fang-homepage .fp-meta { color: var(--global-text-color-light, #6b7280); }
-.fang-homepage .fp-mentor { opacity: 0.93; }
-.fang-homepage .fp-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.9rem; margin-top: 0.8rem; }
-.fang-homepage .fp-research-card { height: 100%; padding: 1.08rem 1.1rem; animation: fp-rise-in 620ms cubic-bezier(.2,.7,.2,1) both; animation-delay: var(--fp-delay, 0ms); }
-.fang-homepage .fp-research-heading { display: flex; align-items: center; gap: 0.65rem; margin-bottom: 0.45rem; font-size: 1.03rem; font-weight: 740; line-height: 1.5; }
-.fang-homepage .fp-icon { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 2.05rem; width: 2.05rem; height: 2.05rem; border-radius: 10px; background: color-mix(in srgb, var(--fp-accent) 11%, transparent); color: var(--fp-accent); }
-.fang-homepage .fp-research-card p { font-size: 0.94rem; line-height: 1.8; margin: 0.3rem 0 0; }
-.fang-homepage .fp-paper-card { margin: 0.85rem 0; }
-.fang-homepage .fp-paper-card .fp-research-heading { align-items: flex-start; font-size: 1.04rem; }
-.fang-homepage .fp-paper-meta { margin-top: 0.6rem !important; font-size: 0.88rem !important; color: var(--global-text-color-light, #6b7280); }
-.fang-homepage a.fp-button {
-  display: inline-flex; align-items: center; gap: 0.45rem; margin-top: 0.65rem; padding: 0.48rem 0.85rem;
-  border: 1px solid color-mix(in srgb, var(--fp-accent) 36%, var(--fp-border)); border-radius: 9px;
-  color: var(--fp-accent); font-size: 0.9rem; font-weight: 680; text-decoration: none;
-  transition: background 180ms ease, transform 180ms ease;
-}
-.fang-homepage a.fp-button:hover { background: color-mix(in srgb, var(--fp-accent) 9%, transparent); text-decoration: none; transform: translateY(-1px); }
-@keyframes fp-rise-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+.fang-homepage .fp-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .85rem; margin-top: .75rem; }
+.fang-homepage .fp-research-card { height: 100%; padding: .95rem 1rem; animation: fp-rise-in 580ms cubic-bezier(.2,.7,.2,1) both; animation-delay: var(--fp-delay, 0ms); }
+.fang-homepage .fp-research-heading { display: flex; align-items: flex-start; gap: .6rem; margin: 0 0 .35rem; font-size: 1rem; line-height: 1.55; font-weight: 740; }
+.fang-homepage .fp-icon { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 1.95rem; width: 1.95rem; height: 1.95rem; border-radius: 9px; background: color-mix(in srgb, var(--fp-accent) 10%, transparent); color: var(--fp-accent); }
+.fang-homepage .fp-research-card p { margin: .25rem 0 0; font-size: .93rem; line-height: 1.72; }
+.fang-homepage .fp-award-list { margin: .4rem 0 0; padding-left: 1.2rem; }
+.fang-homepage .fp-award-list li { margin: .25rem 0; font-size: .92rem; line-height: 1.7; }
+.fang-homepage .fp-links { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: .6rem; }
+.fang-homepage a.fp-button { display: inline-flex; align-items: center; gap: .4rem; padding: .4rem .72rem; border: 1px solid color-mix(in srgb, var(--fp-accent) 30%, var(--fp-border)); border-radius: 8px; color: var(--fp-accent); font-size: .87rem; font-weight: 680; text-decoration: none; transition: background 160ms ease, transform 160ms ease; }
+.fang-homepage a.fp-button:hover { background: color-mix(in srgb, var(--fp-accent) 7%, transparent); text-decoration: none; transform: translateY(-1px); }
+@keyframes fp-rise-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 @media (max-width: 640px) {
   main { font-size: 15.5px; }
-  main h2 { margin-top: 2.2rem; }
+  .fang-homepage h2 { margin-top: 2.05rem; }
+  .fang-homepage h2.fp-clear { margin-top: 2rem; }
   .fang-homepage .fp-grid { grid-template-columns: minmax(0, 1fr); }
-  .fang-homepage .fp-card { padding: 0.9rem; }
+  .fang-homepage .fp-card { padding: .82rem .9rem; }
+  .fang-homepage .fp-date { white-space: normal; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .fang-homepage .fp-timeline-item, .fang-homepage .fp-research-card { animation: none; }
-  .fang-homepage .fp-card, .fang-homepage .fp-timeline-item::before, .fang-homepage a.fp-button { transition: none; }
+  .fang-homepage .fp-item, .fang-homepage .fp-research-card { animation: none; }
+  .fang-homepage .fp-card, .fang-homepage .fp-item::before, .fang-homepage a.fp-button { transition: none; }
 }
-</style> </head> <body> <div class="fang-homepage"> <h2>关于我</h2> <p class="fp-intro">彭芳，现任华南农业大学数学与信息学院软件学院副教授，博士毕业于中山大学计算机学院。研究方向包括<strong>多模态大模型、视觉语言预训练、小样本迁移学习与视觉理解</strong>。研究工作聚焦于视觉语言预训练模型的小样本适配、视频动作识别中的实例级语义建模，以及多模态大语言模型的视觉判别能力增强。</p> <h2>教育背景</h2> <div class="fp-timeline"> <article class="fp-timeline-item" style="--fp-delay: 0ms"> <div class="fp-date">2022.09 — 2026.06</div> <div class="fp-card"> <div class="fp-card-title"> <strong>中山大学</strong><span class="fp-tag">博士</span> </div> <p class="fp-meta">计算机学院</p> <p class="fp-mentor">导师：王昌栋教授</p> </div> </article> <article class="fp-timeline-item" style="--fp-delay: 100ms"> <div class="fp-date">2018.09 — 2021.06</div> <div class="fp-card"> <div class="fp-card-title"> <strong>中山大学</strong><span class="fp-tag">硕士</span> </div> <p class="fp-meta">计算机学院</p> <p class="fp-mentor">导师：王昌栋教授</p> </div> </article> <article class="fp-timeline-item" style="--fp-delay: 200ms"> <div class="fp-date">2014.09 — 2018.06</div> <div class="fp-card"> <div class="fp-card-title"> <strong>华南农业大学</strong><span class="fp-tag">学士</span> </div> <p class="fp-meta">数学与信息学院软件学院</p> <p class="fp-mentor">导师：黄栋教授</p> </div> </article> </div> <h2>工作经历</h2> <div class="fp-timeline"> <article class="fp-timeline-item" style="--fp-delay: 0ms"> <div class="fp-date">2026.07 — 至今</div> <div class="fp-card"> <div class="fp-card-title"> <strong>华南农业大学</strong><span class="fp-tag">副教授</span> </div> <p class="fp-meta">数学与信息学院软件学院</p> <p class="fp-mentor">从事计算机与人工智能相关教学和科研工作。</p> </div> </article> </div> <h2>研究方向</h2> <div class="fp-grid"> <article class="fp-card fp-research-card" style="--fp-delay: 0ms"> <div class="fp-research-heading"> <span class="fp-icon"><i class="fa-solid fa-eye" aria-hidden="true"></i></span>多模态大模型视觉理解</div> <p>研究生成式多模态模型的视觉识别与细粒度判别能力，探索在不依赖额外外部知识的情况下激发模型内在视觉能力。</p> </article> <article class="fp-card fp-research-card" style="--fp-delay: 80ms"> <div class="fp-research-heading"> <span class="fp-icon"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i></span>视觉语言模型小样本迁移</div> <p>研究通用预训练知识与任务特定视觉信息的高效融合，提升少样本场景下的适配效果并尽可能保持模型泛化能力。</p> </article> <article class="fp-card fp-research-card" style="--fp-delay: 160ms"> <div class="fp-research-heading"> <span class="fp-icon"><i class="fa-solid fa-film" aria-hidden="true"></i></span>小样本视频理解</div> <p>面向少样本动作识别，探索实例级代理语义建模与动态时序信息学习。</p> </article> <article class="fp-card fp-research-card" style="--fp-delay: 240ms"> <div class="fp-research-heading"> <span class="fp-icon"><i class="fa-solid fa-water" aria-hidden="true"></i></span>视觉理解应用</div> <p>关注细粒度图像分类、水下图像目标检测等视觉任务。</p> </article> </div> <h2>代表性研究</h2> <div class="fp-card fp-paper-card"> <div class="fp-research-heading"> <span class="fp-icon"><i class="fa-solid fa-brain" aria-hidden="true"></i></span>GROVE：多模态大语言模型的视觉判别增强</div> <p>针对多模态大语言模型在视觉识别任务中的判别能力不足问题，提出组相对视觉判别增强方法 GROVE，通过轻量视觉路由插件与组相对奖惩机制激发模型内在视觉判别潜力。</p> <p class="fp-paper-meta"><strong>IEEE Transactions on Circuits and Systems for Video Technology</strong>, 2026。</p> <a class="fp-button" href="https://github.com/FannierPeng/GROVE" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> 查看代码</a> <a class="fp-button" href="https://doi.org/10.1109/TCSVT.2026.3652189" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> 查看论文</a> </div> <div class="fp-card fp-paper-card"> <div class="fp-research-heading"> <span class="fp-icon"><i class="fa-solid fa-video" aria-hidden="true"></i></span>ProLIPS：面向小样本动作识别的实例级代理语义学习</div> <p>提出渐进式实例级代理语义学习方法 ProLIPS，通过代理语义扩散模块与预训练知识引导机制，建模少样本视频中的动态时序语义。</p> <p class="fp-paper-meta"><strong>IEEE Transactions on Multimedia</strong>, 2026。</p> <a class="fp-button" href="https://doi.org/10.1109/TMM.2025.3632652" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> 查看论文</a> </div> <div class="fp-card fp-paper-card"> <div class="fp-research-heading"> <span class="fp-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></span>SgVA-CLIP：语义引导的视觉语言模型小样本适配</div> <p>通过隐式知识蒸馏将跨模态原型中的细粒度相对语义迁移至视觉特征空间，实现预训练知识与任务特定视觉知识的高效融合。</p> <p class="fp-paper-meta"><strong>IEEE Transactions on Multimedia</strong>, 2024。</p> <a class="fp-button" href="https://doi.org/10.1109/TMM.2023.3311646" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> 查看论文</a> </div> <p><a class="fp-button" href="/HomePage/publications/"><i class="fa-solid fa-book-open" aria-hidden="true"></i> 查看全部学术成果</a>　<a class="fp-button" href="/HomePage/cv/"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> 教育与经历</a></p> </div> </body> </html>
+</style> <div class="fang-homepage"> <h2>关于我</h2> <p class="fp-intro">彭芳，现任华南农业大学数学与信息学院软件学院首聘副教授，博士毕业于中国科学院自动化研究所。研究方向包括<strong>多模态大模型的后训练与推理增强、视觉语言预训练模型的小样本适配与迁移，以及空间智能与多模态场景理解</strong>。关注少样本条件下的细粒度视觉语义建模、视觉信息高效利用与多模态模型推理能力提升。</p> <h2 class="fp-clear">教育背景</h2> <div class="fp-timeline"> <article class="fp-item" style="--fp-delay: 0ms"> <div class="fp-date-row"><span class="fp-date">2021.09 — 2026.01</span></div> <div class="fp-card"> <div class="fp-card-title"> <strong>中国科学院自动化研究所 · 模式识别与智能系统</strong><span class="fp-tag">博士</span> </div> <p class="fp-mentor">导师：徐常胜研究员（国家杰青、万人计划领军人才、IEEE Fellow）</p> </div> </article> <article class="fp-item" style="--fp-delay: 80ms"> <div class="fp-date-row"><span class="fp-date">2017.09 — 2020.01</span></div> <div class="fp-card"> <div class="fp-card-title"> <strong>中国农业大学 · 计算机科学与技术</strong><span class="fp-tag">硕士</span> </div> <p class="fp-mentor">导师：李振波教授</p> </div> </article> <article class="fp-item" style="--fp-delay: 160ms"> <div class="fp-date-row"><span class="fp-date">2013.09 — 2017.06</span></div> <div class="fp-card"> <div class="fp-card-title"> <strong>中国农业大学 · 能源与动力工程、计算机科学与技术</strong><span class="fp-tag">双学位学士</span> </div> </div> </article> </div> <h2>工作经历</h2> <div class="fp-timeline"> <article class="fp-item" style="--fp-delay: 0ms"> <div class="fp-date-row"><span class="fp-date">2026.09 — 至今</span></div> <div class="fp-card"> <div class="fp-card-title"> <strong>华南农业大学</strong><span class="fp-tag">首聘副教授</span> </div> <p class="fp-meta">数学与信息学院软件学院</p> <p class="fp-mentor">从事计算机与人工智能相关教学和科研工作。</p> </div> </article> <article class="fp-item" style="--fp-delay: 80ms"> <div class="fp-date-row"><span class="fp-date">2020.04 — 2021.08</span></div> <div class="fp-card"> <div class="fp-card-title"> <strong>鹏城国家实验室</strong><span class="fp-tag">大语言模型算法研发</span> </div> <p class="fp-mentor">参与盘古 Alpha 大语言模型相关研发工作。</p> </div> </article> <article class="fp-item" style="--fp-delay: 160ms"> <div class="fp-date-row"><span class="fp-date">2017.07 — 2017.09</span></div> <div class="fp-card"> <div class="fp-card-title"> <strong>小米科技</strong><span class="fp-tag">实习生</span> </div> <p class="fp-meta">人工智能云平台</p> </div> </article> </div> <h2>研究方向</h2> <div class="fp-grid"> <article class="fp-card fp-research-card" style="--fp-delay: 0ms"> <div class="fp-research-heading"> <span class="fp-icon"><i class="fa-solid fa-brain" aria-hidden="true"></i></span>多模态大模型的后训练与推理增强</div> <p>探索小样本与细粒度视觉识别、视觉信息冗余精简，以及多模态大语言模型内在视觉能力的激发。</p> </article> <article class="fp-card fp-research-card" style="--fp-delay: 70ms"> <div class="fp-research-heading"> <span class="fp-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></span>视觉语言预训练模型的小样本适配与迁移</div> <p>研究通用预训练知识向下游任务与交叉任务的泛化迁移，提升少样本条件下的适配效率与泛化能力。</p> </article> <article class="fp-card fp-research-card" style="--fp-delay: 140ms"> <div class="fp-research-heading"> <span class="fp-icon"><i class="fa-solid fa-cubes" aria-hidden="true"></i></span>空间智能与多模态场景理解</div> <p>关注视觉空间关系、场景结构理解与多模态推理方法。</p> </article> </div> <h2>主持项目与获奖荣誉</h2> <div class="fp-grid"> <section class="fp-card fp-research-card" style="--fp-delay: 0ms"> <div class="fp-research-heading"> <span class="fp-icon"><i class="fa-solid fa-file-signature" aria-hidden="true"></i></span>主持项目</div> <p><strong>国家自然科学基金青年科学基金项目 1 项</strong></p> <p class="fp-muted">项目名称与批准年度可在后续取得正式信息后补充。</p> </section> <section class="fp-card fp-research-card" style="--fp-delay: 70ms"> <div class="fp-research-heading"> <span class="fp-icon"><i class="fa-solid fa-award" aria-hidden="true"></i></span>获奖荣誉</div> <ul class="fp-award-list"> <li>2023｜鹏城实验室优秀博士生</li> <li>2024｜中国科学院大学三好学生</li> <li>2016｜美国大学生数学建模竞赛 H 奖</li> <li>2016｜全国大学生物理竞赛二等奖</li> </ul> </section> </div> <p class="fp-muted" style="margin-top:1.2rem">代表性论文、研究简介及 DOI / 代码链接见 <a href="/HomePage/publications/">学术成果</a> 页面。</p> </div> </div> <div class="social"> <div class="contact-icons"> <a href="mailto:pengfang21@mails.ucas.ac.cn" title="Email"><i class="fa-solid fa-envelope"></i></a> <a href="/HomePage/feed.xml" title="Rss icon"><i class="fa-solid fa-square-rss"></i></a> </div> <div class="contact-note">You can even add a little note about which of these is the best way to reach you. </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Fang Peng. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/HomePage/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/HomePage/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/HomePage/assets/al_math/js/mathjax-setup.js"></script> <script src="/HomePage/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/HomePage/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/HomePage/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/HomePage/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/HomePage/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/HomePage/assets/al_img_tools/js/zoom.js"></script> <script defer src="/HomePage/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/HomePage/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/HomePage/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-首页",
+    title: "首页",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/HomePage/";
+    },
+  },{id: "nav-首页",
+          title: "首页",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/HomePage/";
+          },
+        },{id: "nav-学术成果",
+          title: "学术成果",
+          description: "彭芳的代表性研究工作与学术论文。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/HomePage/publications/";
+          },
+        },{id: "post-a-post-with-marimo-snippets",
+        
+          title: "a post with marimo snippets",
+        
+        description: "running Python in the browser with marimo",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2025/marimo/";
+          
+        },
+      },{id: "post-a-post-with-plotly-js",
+        
+          title: "a post with plotly.js",
+        
+        description: "this is what included plotly.js code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2025/plotly/";
+          
+        },
+      },{id: "post-a-post-with-image-galleries",
+        
+          title: "a post with image galleries",
+        
+        description: "this is what included image galleries could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2024/photo-gallery/";
+          
+        },
+      },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
+        
+          title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
+          
+        },
+      },{id: "post-a-post-with-tabs",
+        
+          title: "a post with tabs",
+        
+        description: "this is what included tabs in a post could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2024/tabs/";
+          
+        },
+      },{id: "post-a-post-with-typograms",
+        
+          title: "a post with typograms",
+        
+        description: "this is what included typograms code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2024/typograms/";
+          
+        },
+      },{id: "post-a-post-that-can-be-cited",
+        
+          title: "a post that can be cited",
+        
+        description: "this is what a post that can be cited looks like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2024/post-citation/";
+          
+        },
+      },{id: "post-a-post-with-pseudo-code",
+        
+          title: "a post with pseudo code",
+        
+        description: "this is what included pseudo code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2024/pseudocode/";
+          
+        },
+      },{id: "post-a-post-with-code-diff",
+        
+          title: "a post with code diff",
+        
+        description: "this is how you can display code diffs",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2024/code-diff/";
+          
+        },
+      },{id: "post-a-post-with-advanced-image-components",
+        
+          title: "a post with advanced image components",
+        
+        description: "this is what advanced image components could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2024/advanced-images/";
+          
+        },
+      },{id: "post-a-post-with-vega-lite",
+        
+          title: "a post with vega lite",
+        
+        description: "this is what included vega lite code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2024/vega-lite/";
+          
+        },
+      },{id: "post-a-post-with-geojson",
+        
+          title: "a post with geojson",
+        
+        description: "this is what included geojson code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2024/geojson-map/";
+          
+        },
+      },{id: "post-a-post-with-echarts",
+        
+          title: "a post with echarts",
+        
+        description: "this is what included echarts code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2024/echarts/";
+          
+        },
+      },{id: "post-a-post-with-chart-js",
+        
+          title: "a post with chart.js",
+        
+        description: "this is what included chart.js code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2024/chartjs/";
+          
+        },
+      },{id: "post-a-post-with-tikzjax",
+        
+          title: "a post with TikZJax",
+        
+        description: "this is what included TikZ code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2023/tikzjax/";
+          
+        },
+      },{id: "post-a-post-with-bibliography",
+        
+          title: "a post with bibliography",
+        
+        description: "an example of a blog post with bibliography",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2023/post-bibliography/";
+          
+        },
+      },{id: "post-a-post-with-jupyter-notebook",
+        
+          title: "a post with jupyter notebook",
+        
+        description: "an example of a blog post with jupyter notebook",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2023/jupyter-notebook/";
+          
+        },
+      },{id: "post-a-post-with-custom-blockquotes",
+        
+          title: "a post with custom blockquotes",
+        
+        description: "an example of a blog post with custom blockquotes",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2023/custom-blockquotes/";
+          
+        },
+      },{id: "post-a-post-with-table-of-contents-on-a-sidebar",
+        
+          title: "a post with table of contents on a sidebar",
+        
+        description: "an example of a blog post with table of contents on a sidebar",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2023/sidebar-table-of-contents/";
+          
+        },
+      },{id: "post-a-post-with-audios",
+        
+          title: "a post with audios",
+        
+        description: "this is what included audios could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2023/audios/";
+          
+        },
+      },{id: "post-a-post-with-videos",
+        
+          title: "a post with videos",
+        
+        description: "this is what included videos could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2023/videos/";
+          
+        },
+      },{id: "post-displaying-beautiful-interactive-tables",
+        
+          title: "displaying beautiful interactive tables",
+        
+        description: "an example of how to use interactive tables in al-folio",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2023/tables/";
+          
+        },
+      },{id: "post-a-post-with-table-of-contents",
+        
+          title: "a post with table of contents",
+        
+        description: "an example of a blog post with table of contents",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2023/table-of-contents/";
+          
+        },
+      },{id: "post-a-post-with-giscus-comments",
+        
+          title: "a post with giscus comments",
+        
+        description: "an example of a blog post with giscus comments",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2022/giscus-comments/";
+          
+        },
+      },{id: "post-یک-نوشتهٔ-راست-چین",
+        
+          title: "یک نوشتهٔ راست‌چین",
+        
+        description: "نمونه‌ای از پشتیبانی زبان‌های راست‌چین",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2022/rtl/";
+          
+        },
+      },{id: "post-displaying-external-posts-on-your-al-folio-blog",
+        
+          title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
+          
+        },
+      },{id: "post-a-post-with-redirect",
+        
+          title: "a post with redirect",
+        
+        description: "you can also redirect to assets like pdf",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/assets/pdf/example_pdf.pdf";
+          
+        },
+      },{id: "post-a-post-with-diagrams",
+        
+          title: "a post with diagrams",
+        
+        description: "an example of a blog post with diagrams",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2021/diagrams/";
+          
+        },
+      },{id: "post-a-distill-style-blog-post",
+        
+          title: "a distill-style blog post",
+        
+        description: "an example of a distill-style blog post and main elements",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2021/distill/";
+          
+        },
+      },{id: "post-a-post-with-twitter",
+        
+          title: "a post with twitter",
+        
+        description: "an example of a blog post with twitter",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2020/twitter/";
+          
+        },
+      },{id: "post-a-post-with-disqus-comments",
+        
+          title: "a post with disqus comments",
+        
+        description: "an example of a blog post with disqus comments",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2015/disqus-comments/";
+          
+        },
+      },{id: "post-a-post-with-math",
+        
+          title: "a post with math",
+        
+        description: "an example of a blog post with some math",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2015/math/";
+          
+        },
+      },{id: "post-a-post-with-code",
+        
+          title: "a post with code",
+        
+        description: "an example of a blog post with some code",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2015/code/";
+          
+        },
+      },{id: "post-a-post-with-images",
+        
+          title: "a post with images",
+        
+        description: "this is what included images could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2015/images/";
+          
+        },
+      },{id: "post-a-post-with-formatting-and-links",
+        
+          title: "a post with formatting and links",
+        
+        description: "march & april, looking forward to summer",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/HomePage/blog/2015/formatting-and-links/";
+          
+        },
+      },{id: "books-the-godfather",
+          title: 'The Godfather',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/HomePage/books/the_godfather/";
+            },},{id: "news-a-simple-inline-announcement",
+          title: 'A simple inline announcement.',
+          description: "",
+          section: "News",},{id: "news-a-long-announcement-with-details",
+          title: 'A long announcement with details',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/HomePage/news/announcement_2/";
+            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
+          title: 'A simple inline announcement with Markdown emoji! <img class="emoji" title=":sparkles:" alt=":sparkles:" src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png" height="20" width="20"> <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">',
+          description: "",
+          section: "News",},{id: "projects-project-1",
+          title: 'project 1',
+          description: "with background image",
+          section: "Projects",handler: () => {
+              window.location.href = "/HomePage/projects/1_project/";
+            },},{id: "projects-project-2",
+          title: 'project 2',
+          description: "a project with a background image and giscus comments",
+          section: "Projects",handler: () => {
+              window.location.href = "/HomePage/projects/2_project/";
+            },},{id: "projects-project-3-with-very-long-name",
+          title: 'project 3 with very long name',
+          description: "a project that redirects to another website",
+          section: "Projects",handler: () => {
+              window.location.href = "/HomePage/projects/3_project/";
+            },},{id: "projects-project-4",
+          title: 'project 4',
+          description: "another without an image",
+          section: "Projects",handler: () => {
+              window.location.href = "/HomePage/projects/4_project/";
+            },},{id: "projects-project-5",
+          title: 'project 5',
+          description: "a project with a background image",
+          section: "Projects",handler: () => {
+              window.location.href = "/HomePage/projects/5_project/";
+            },},{id: "projects-project-6",
+          title: 'project 6',
+          description: "a project with no image",
+          section: "Projects",handler: () => {
+              window.location.href = "/HomePage/projects/6_project/";
+            },},{id: "projects-project-7",
+          title: 'project 7',
+          description: "with background image",
+          section: "Projects",handler: () => {
+              window.location.href = "/HomePage/projects/7_project/";
+            },},{id: "projects-project-8",
+          title: 'project 8',
+          description: "an other project with a background image and giscus comments",
+          section: "Projects",handler: () => {
+              window.location.href = "/HomePage/projects/8_project/";
+            },},{id: "projects-project-9",
+          title: 'project 9',
+          description: "another project with an image 🎉",
+          section: "Projects",handler: () => {
+              window.location.href = "/HomePage/projects/9_project/";
+            },},{id: "teachings-data-science-fundamentals",
+          title: 'Data Science Fundamentals',
+          description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/HomePage/teachings/data-science-fundamentals/";
+            },},{id: "teachings-introduction-to-machine-learning",
+          title: 'Introduction to Machine Learning',
+          description: "This course provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/HomePage/teachings/introduction-to-machine-learning/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%70%65%6E%67%66%61%6E%67%32%31@%6D%61%69%6C%73.%75%63%61%73.%61%63.%63%6E", "_blank");
+        },
+      },{
+        id: 'social-rss',
+        title: 'RSS Feed',
+        section: 'Socials',
+        handler: () => {
+          window.open("/HomePage/feed.xml", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/HomePage/assets/al_search/js/shortcut-key.js"></script> </body> </html>
